@@ -1,0 +1,41 @@
+
+#navbar-collapse{
+	float: right;
+}
+div.about-me {
+   	color: #348cc4;
+   	border: 1px solid #348cc4;
+   	display: inline-block;
+   	margin-top:6px;
+   	border-radius: 3px;
+   	padding-right: 30px;
+   	padding-left: 30px;
+
+   }
+div.about-me:hover {
+   	color: #fff;
+   	background-color: #348cc4;
+   }
+ div.about-me:hover a{
+   	text-decoration: none;
+   	color: #fff;
+   	background-color: #348cc4;
+   }
+  #navbar-collapse ul{
+   	padding-left: 15px;
+   	padding-right: 15px;
+   }
+   ul .dropdown-menu{
+   	border-radius: 10px;
+   	background-color:#474747;
+   	color: #fff;
+   	
+   }
+     ul .dropdown-menu li a {
+    color: #fff;
+   }
+
+    ul .dropdown-menu li :hover{
+    color: #fff;
+    background-color:#FF4000;
+   }
