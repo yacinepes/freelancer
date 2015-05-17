@@ -24,6 +24,7 @@ class HomeController extends BaseController {
 	{
 		return View::make('index');
 	}
+	
 	public function authenticate()
 	{
 		$validation = Validator::make(Input::all(),User::$auth_rules);
@@ -40,11 +41,11 @@ class HomeController extends BaseController {
 		{
 
 			$user = Auth::user();
-			if($user->role == admin){
+			if($user->isAdmin == 1){
 				return Redirect::route('AdminIndex');
 			}
 			else {
-				## go Shopping
+				return Redirect::route('newcategory'); 
 			}
 			
 		}

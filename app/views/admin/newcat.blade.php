@@ -21,7 +21,7 @@
 				<div class="container">
 		<h1>Register</h1>
 
-		<form role="form" method="post" action="{{ URL::Route('newcategory') }}">
+		<form role="form" method="post"  }}">
 			<div class="form-group {{ ($errors->has('cat_name')) ? ' has-error' : '' }}">
 				<label for="cat_name">Username: </lable>
 					<input id="cat_name" name="cat_name" type="text" class="form-control">

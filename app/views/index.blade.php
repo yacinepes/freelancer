@@ -20,6 +20,7 @@
 @yield('main')
 @include('footer')
 
+
 	</div>
 	</div>
 </div>

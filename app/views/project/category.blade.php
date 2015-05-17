@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>
-		</title>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <head>
+    <title>
+    </title>
+    <link rel="stylesheet" type="text/css" href="asset("css/bootstrap.css");">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" href="css/bootstrap-glyphicons.css" >
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
     <!--<link rel="stylesheet" href='http//:fonts.googleaois.com/css?famoly=Oswall | Open+Sans'>
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
@@ -19,9 +19,9 @@
     <![endif]-->
 
 
-	</head>
-	<body>
-		<nav class="navbar navbar-default "role="navigation">
+  </head>
+  <body>
+    <nav class="navbar navbar-default "role="navigation">
           <div class="container">
                 <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -129,6 +129,6 @@
 
 
          <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	</body>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
 </html>
