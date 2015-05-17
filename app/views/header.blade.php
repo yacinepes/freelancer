@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-    <!--<link rel="stylesheet" href='http//:fonts.googleaois.com/css?famoly=Oswall | Open+Sans'>
+    <link rel="stylesheet" href='http//:fonts.googleaois.com/css?famoly=Oswall | Open+Sans'>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,9 +32,6 @@
                         </button>
                         <a href="index.html" class="navbar-brand">Freelance</a>
                 </div>
-                @if(Auth::check() && Auth::user()->isAdmin())
-  <a href="{{URL()}}/newcategory" class="btn btn-default" data-toggle="modal" data-target="#group_form">cagjhy!</a>
-@endif
               <div class="collapse navbar-collapse " id="navbar-collapse">
               <ul class="nav navbar-nav">
 
@@ -47,13 +44,13 @@
                 </li>
                   <li class="divider"></li>
                 <li>
-                  <a href="{{URL()}}/newcategory">new category</a>
+                  <a href="#">Browse Hourlies</a>
                 </li>
 
                 <li class="divider"></li>
 
                 <li>
-                  <a href="{{URL()}}/newproject">Find Freelancers</a>
+                  <a href="#">Find Freelancers</a>
                 </li>
                   <li class="divider"></li>
                    <li>
@@ -70,7 +67,7 @@
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="{{URL()}}/freelance-jobs">Browse Jobs</a>
+                  <a href="#">Browse Jobs</a>
                 </li>
 
                 <li class="divider"></li>
@@ -111,8 +108,7 @@
             </li>
             <li class="divider"></li>
             <li>
-              <a href="{{URL()}}/logout"><span class="glyphicon glyphicon-off"></span>{{Lang::get('main.logout')}}</a>
-             
+              <a href="#"><span class="glyphicon glyphicon-off"></span>Sign out</a>
             </li>
           </ul>
                 </li>

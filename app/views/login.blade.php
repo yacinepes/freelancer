@@ -22,7 +22,6 @@
 
 			<div class="panel panel-default">
 				<div class="panel-heading">
-
 					<h3 class="panel-title">
 						{{ Lang::get('main.login')  }}
 					</h3>
@@ -33,14 +32,14 @@
 						<div class="form-group">
 					{{Form::label('email',Lang::get('main.email'))}}<br>
 					<div class="col-sm-10">
-						{{ Form::text('email','',array('class'=>'form-control text-left','placeholder'=>Lang::get('main.email'))) }}
+						{{ Form::text('email','',array('class'=>'form-control text-right','placeholder'=>Lang::get('main.email'))) }}
 					</div>
 					</div>
 
 							<div class="form-group">
 					{{Form::label('password',Lang::get('main.password'))}}
 					<div class="col-sm-10">
-						{{ Form::password('password',array('class'=>'form-control text-left','placeholder'=>Lang::get('main.password'))) }}
+						{{ Form::password('password',array('class'=>'form-control text-right','placeholder'=>Lang::get('main.password'))) }}
 					</div>
 					
 					

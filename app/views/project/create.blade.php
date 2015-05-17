@@ -1,26 +1,57 @@
 
-@extends('index')
-@section('main')
 
 
 
-<div class="col-md-12">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-Up: A Laravel Form</title>
+    <style>
+        body {
+      width: 800px;
+      margin: 20px auto;  
+    }
+        label {
+            display: block;
+            padding-top: 1em;
+        }
+        input[type="submit"] {
+            display: block;
+            margin-top: 2em;
+        }
+        textarea {
+            display: block;
+            margin-bottom: 1em;
+        }
+        input[type="checkbox"] {
+            display: inline-block;
+            margin-top: 1em;
+        }
+        label[for="agree"] {
+            display: inline;
+        }
 
-{{ Form::open(array('route'=>'category.store','role'=>'form')) }}
-<div class="form-group">
-{{ Form::label('name',name) }}
-{{ Form::text('name','',array('class'=>'form-control text-right','placeholder'=>Lang::get('main.email'))) }}
-</div>
-<div class="form-group">
-{{ Form::label('description',description) }}
-{{ Form::text('description','',array('class'=>'form-control text-right','placeholder'=>Lang::get('main.email'))) }}
-</div>
-<div>
-<div class="btn btn-group">
-    {{ Form::submit(add),array('class'=>'btn btn-success') }}
-</div>
+    </style>
+</head>
+
+<body>
+<h1>Newsletter sign up</h1>
+{{ Form::open(['action'=>'projectController@store']) }}
+
+     {{ Form::label('person', 'Email Address') }}
+     {{ Form::text('person') }}
+
+   
+
+    {{ Form::label('title', 'Comments') }}
+    {{ Form::textarea('title', '', array('placeholder' => 'What are your interests?')) }}
+     
+   
+     
+     {{ Form::submit('Sign Up') }}
+
 {{ Form::close() }}
-</div>
+</body>
+</html>
 
-@endsection
-@stop

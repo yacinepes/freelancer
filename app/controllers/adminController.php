@@ -54,7 +54,7 @@ public function newCategory()
  		{
  			
 
- 			$validation = Validator::make(Input::all(), Categ::$rules);
+ 			$validation = Validator::make(Input::all(), Category::$rules);
 
  			if($validation->fails())
  			{
@@ -62,19 +62,19 @@ public function newCategory()
 				return Redirect::back()->withInput()->withErrors($validation->messages());
  			}
 
- 			$categ = new Categ;
+ 			$category = new Category;
 
- 			$categ->cat_name = Input::get('cat_name');
+ 			$category->cat_name = Input::get('cat_name');
 
- 			$categ->save();
+ 			$category->save();
 
- 			return Redirect::back()->withInput();
+ 			return Redirect::route('/');
  		}
 
 
  		public function editCategory($id)
  		{
- 			if($category = Categ::find($id))
+ 			if($category = Category::find($id))
  			{
  				return View::make('admin.editCat', compact('category'));
  			}

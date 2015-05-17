@@ -9,9 +9,7 @@ class projectController extends \BaseController {
 	 */
 	public function index()
 	{
-			$category = categ::all();
-			$project =project::all();
-		return View::make('project.index')->with('category',$category)->with('project',$project);
+		return View::make('project.index')->with('title','freelance jobs');
 
 	}
 
@@ -52,19 +50,9 @@ class projectController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function indexcategory($id)
+	public function show($id)
 	{
-		$category = categ::find($id);
-			$categories = categ::all();
-		
-		if ($category == null)
-		{
-			return Redirect::route('freelance-jobs')->with('fail', "That category doesn't exist.");
-		}
-		$project = $category->project()->get();
-
-		return View::make('project.category')->with('category', $category)->with('project', $project)->with('categories', $categories);
-	
+		//
 	}
 
 
